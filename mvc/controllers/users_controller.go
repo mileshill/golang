@@ -1,3 +1,5 @@
+// controllers
+// Handles requests made to the server
 package controllers
 
 import (
@@ -8,6 +10,8 @@ import (
 	"strconv"
 )
 
+// GetUser
+// Queries datastore for a user given a user_id
 func GetUser(res http.ResponseWriter, req *http.Request){
 	// Parse any params
 	paramUserId := req.URL.Query().Get("user_id")
